@@ -1,0 +1,17 @@
+{
+  "name": "prakhar-singh-fitness",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test clientStorage.test.mjs dietMeals.test.mjs fitnessLogic.test.mjs api/lib/accounts.test.mjs",
+    "db:migrate": "node --env-file=.env scripts/migrate.mjs",
+    "dev": "node --env-file=.env scripts/dev-server.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
